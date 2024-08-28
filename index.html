@@ -18,10 +18,12 @@
 
         .banner {
             background-color: #0000050a; 
-            padding: 20px 0;
-            text-align: center;
-            border-radius: 8px; 
-            margin-bottom: 40px; 
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px; /* Rounded corners for a modern look */
+            margin-bottom: 40px; /* Space below the banner */
         }
 
         .banner h1 {
@@ -29,6 +31,12 @@
             font-size: 36px;
             font-weight: 700;
             margin: 0;
+            flex-grow: 1; /* Allow the text to take up the remaining space */
+            text-align: right; /* Align text to the right */
+        }
+        .banner img {
+            height: 60px; /* Adjust the height of the logo */
+            margin-right: 20px; /* Space between logo and text */
         }
         .container {
             margin-top: 40px;
@@ -112,13 +120,21 @@
             .section .container {
                 flex-direction: column;
             }
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .banner img {
+                margin-bottom: 10px; /* Space between logo and text in smaller screens */
+                margin-right: 0;
+            }
 
             .section .content,
             .section .image {
                 margin-right: 0;
                 margin-bottom: 20px;
             }
-
+    
             h1 {
                 font-size: 35px;
             }
@@ -139,6 +155,7 @@
         <!-- Banner Section -->
         <div class="banner">
             <h1 class="text-center">UeberTech Consulting</h1>
+            <img src="logo.png" alt="UeberTech Logo">
             <p class="text-center">Reduce costs, automate the automatable and push your systems to the next level.</p>
         </div>
 
