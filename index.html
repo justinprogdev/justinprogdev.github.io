@@ -1,257 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UeberTech Consulting</title>
-
-    <!-- Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            color: #000000;
-        }
-
-        .banner {
-            background-color: #0000050a;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 8px;
-            /* Rounded corners for a modern look */
-            margin-bottom: 40px;
-            /* Space below the banner */
-        }
-
-        .banner h1 {
-            font-family: 'Poppins', sans-serif;
-            color: #090000;
-            font-size: 36px;
-            font-weight: 700;
-            margin: 0;
-            flex-grow: 1;
-            /* Allow the text to take up the remaining space */
-            text-align: right;
-            /* Align text to the right */
-        }
-
-        .banner img {
-            height: 60px;
-            /* Adjust the height of the logo */
-            margin-right: 20px;
-            /* Space between logo and text */
-        }
-
-        .container {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-
-        .wide-rectangle {
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #364049;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s;
-        }
-
-        h1,
-        p {
-            color: #000000;
-        }
-
-        h1 {
-            font-size: 30px;
-            font-weight: 600;
-            text-align: center;
-            color: #000000;
-        }
-
-        h2 {
-            font-size: 26px;
-            font-weight: 600;
-            color: #000000;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .section {
-            padding: 40px 0;
-        }
-
-        .section .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .section .content {
-            flex: 1;
-            margin-right: 40px;
-        }
-
-        .section .image {
-            flex: 1;
-        }
-
-        .section h2 {
-            color: #000000;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            color: #000000;
-            margin-bottom: 20px;
-        }
-
-        .section img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .section-dark {
-            background-color: #0000050a;
-        }
-
-        @media (max-width: 768px) {
-            .section .container {
-                flex-direction: column;
-            }
-
-            .banner {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .banner img {
-                margin-bottom: 10px;
-                /* Space between logo and text in smaller screens */
-                margin-right: 0;
-            }
-
-            .section .content,
-            .section .image {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-
-            h1 {
-                font-size: 35px;
-            }
-
-            h2 {
-                font-size: 30px;
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UeberTech Consulting | AI Experts</title>
+  <!-- Latest Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    /* Navbar */
+    .navbar-brand {
+      font-weight: 700;
+    }
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: #fff;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p.lead {
+      font-size: 1.25rem;
+    }
+    /* Section Spacing */
+    .section {
+      padding: 60px 0;
+    }
+    /* Cards */
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    /* Footer */
+    .footer {
+      background-color: #343a40;
+      color: #ccc;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container device-width">
-        <!-- Banner Section -->
-        <div class="banner">
-            <img src="logo.png" alt="UeberTech Logo">
-            <h1 class="text-center">UeberTech Consulting</h1>
-        </div>
-        <p class="text-center">Reduce costs, automate the automatable and push your systems to the next level.</p>
-        <div class="section section-dark">
-            <div class="container">
-                <div class="content">
-                    <h2>Encompass Administration</h2>
-                    <ul>
-                        <li>Help Desk Services: Reliable support to keep your operations running smoothly.</li>
-                        <li>Encompass 360 Plugin Development: Custom plugin development tailored to your needs.</li>
-                        <li>New Instance Migrations: Seamless migrations to new instances of Encompass 360.</li>
-                        <li>Encompass Administration: Expert management and administration of your Encompass systems.
-                        </li>
-                        <li>Custom Software Development: Web, API, Batch Automations</li>
-                    </ul>
-                    <p>No <i>Per File</i> pricing.</p>
-                    <p>No <i>Subscription based plugins</i></p>
-                    <p> 100% U.S. On-shore development</p>
-                </div>
-                <div class="image">
-                    <img src="programming-1873854_1280.png" alt="Chat Bot">
-                </div>
-            </div>
-        </div>
 
-        <hr />
-
-        <!-- Custom Software -->
-        <div class="section">
-            <div class="container">
-                <div class="image">
-                    <img src="lead_developer_hits_bullseye.jpg" alt="Chat Bot">
-                </div>
-                <div class="content">
-                    <h2>AI Enhanced Workflow</h2>
-                    <ul>
-                        <li>Document Generation: Document creation for onboarding and support documents.</li>
-                        <li>Error Checking: Check for errors in common forms with tried and true AI.</li>
-                        <li>Data-Driven Insights: Collect valuable data to continuously improve processing.</li>
-                    </ul>
-                    <p>Integrate AI into your loan origination flow for cost reduction and quality control.</p>
-                </div>
-            </div>
-        </div>
-
-        <hr />
-
-        <!-- Section: Contact Form -->
-        <div class="section section-dark">
-            <div class="container">
-                <div class="content">
-                    <h2>Contact Us</h2>
-                    <p>Have questions or need a consultation? Fill out the form below, and we'll get back to you as soon
-                        as possible.</p>
-                    <!-- <form action="" method="POST"> -->
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                    <!-- </form> -->
-                </div>
-                <div class="image">
-                    <img src="macbook-6159681_1920.jpg" alt="Contact Us">
-                </div>
-            </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">UeberTech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#specialties">Specialties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Artificial Intelligence Experts</h1>
+      <p class="lead">Making your systems work smarter, not harder.</p>
+      <p>IT Services &amp; IT Consulting | Fort Wayne, IN</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>Our Services</h2>
+          <p>We integrate your data with AI augmented workflows to deliver real, practical results.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h5 class="card-title">LLM Chat Integrations</h5>
+            <p class="card-text">Seamlessly connect new or existing systems with AI chat capabilities.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h5 class="card-title">Expedited Search &amp; Retrieval</h5>
+            <p class="card-text">Optimize data search with embeddings and AI‑driven insights.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h5 class="card-title">OpenAI API Integrations</h5>
+            <p class="card-text">Harness advanced AI without reinventing the wheel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Section -->
+  <section id="specialties" class="section bg-light">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>Specialties</h2>
+          <p>Custom Software, Web &amp; API Development, RAG, GANs, and more.</p>
+        </div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">Custom Software Development</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">Web &amp; API Development</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">Retrieval Augmented Generation (RAG)</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">GAN &amp; Adversarial GAN</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">LLM to Data Chat Integration</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">OpenAI API Integrations</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">SQL &amp; MongoDB</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card p-3">
+            <p class="mb-0">AI &amp; Human Workflow Capture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>About UeberTech</h2>
+          <p>We’re a team of Artificial Intelligence Experts focused on practical applications. Our mission is to integrate advanced AI into your systems, streamlining workflows and delivering tangible results.</p>
+          <p>People before processes is our philosophy. As a remote-first company, we leverage global talent without the constraints of a physical office.</p>
+          <p><strong>Virtual Headquarters:</strong> Fort Wayne, IN 46818, US</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/500x300" alt="About Us" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col">
+          <h2>Contact Us</h2>
+          <p>Questions? Need a consultation? Drop us a line and we’ll get back to you promptly.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactSubject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 UeberTech Consulting. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
