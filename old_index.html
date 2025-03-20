@@ -4,16 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pattern AI Consulting | Coming Soon</title>
+    <title>UeberTech Consulting</title>
 
     <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
             color: #000000;
+        }
+
+        .banner {
+            background-color: #0000050a;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+            /* Rounded corners for a modern look */
+            margin-bottom: 40px;
+            /* Space below the banner */
+        }
+
+        .banner h1 {
+            font-family: 'Poppins', sans-serif;
+            color: #090000;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 0;
+            flex-grow: 1;
+            /* Allow the text to take up the remaining space */
+            text-align: right;
+            /* Align text to the right */
+        }
+
+        .banner img {
+            height: 60px;
+            /* Adjust the height of the logo */
+            margin-right: 20px;
+            /* Space between logo and text */
         }
 
         .container {
@@ -99,6 +132,17 @@
                 flex-direction: column;
             }
 
+            .banner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .banner img {
+                margin-bottom: 10px;
+                /* Space between logo and text in smaller screens */
+                margin-right: 0;
+            }
+
             .section .content,
             .section .image {
                 margin-right: 0;
@@ -122,77 +166,89 @@
 
 <body>
     <div class="container device-width">
-        <h1 class="text-center">Coming Soon | Pattern AI Consulting</h1>
-        <p class="text-center">Revolutionize your operations and customer interactions with cutting-edge AI solutions.</p>
-        <hr />
-
-        <!-- Section: Agent Based AI -->
+        <!-- Banner Section -->
+        <div class="banner">
+            <img src="logo.png" alt="UeberTech Logo">
+            <h1 class="text-center">UeberTech Consulting</h1>
+        </div>
+        <p class="text-center">Reduce costs, automate the automatable and push your systems to the next level.</p>
         <div class="section section-dark">
             <div class="container">
                 <div class="content">
-                    <h2>Empower Your Systems with Agent Based AI</h2>
+                    <h2>Encompass Administration</h2>
                     <ul>
-                        <li>Adaptive Algorithms: Create intelligent, adaptive systems capable of learning from experience.</li>
-                        <li>Automated Decision Making: Implement autonomous agents that make real-time decisions based on complex scenarios.</li>
-                        <li>Simulation & Modeling: Use agent-based models to simulate complex systems and gain insights.</li>
+                        <li>Help Desk Services: Reliable support to keep your operations running smoothly.</li>
+                        <li>Encompass 360 Plugin Development: Custom plugin development tailored to your needs.</li>
+                        <li>New Instance Migrations: Seamless migrations to new instances of Encompass 360.</li>
+                        <li>Encompass Administration: Expert management and administration of your Encompass systems.
+                        </li>
+                        <li>Custom Software Development: Web, API, Batch Automations</li>
                     </ul>
-                    <p>Step into the next generation of AI with our Agent Based AI solutions.</p>
+                    <p>No <i>Per File</i> pricing.</p>
+                    <p>No <i>Subscription based plugins</i></p>
+                    <p> 100% U.S. On-shore development</p>
                 </div>
                 <div class="image">
-                    <img src="agent_based_ai_image.jpg" alt="Agent Based AI">
+                    <img src="programming-1873854_1280.png" alt="Chat Bot">
                 </div>
             </div>
         </div>
 
         <hr />
 
-        <!-- Section: Chat Bot Integration -->
+        <!-- Custom Software -->
         <div class="section">
             <div class="container">
                 <div class="image">
-                    <img src="chat_bot_image.jpg" alt="Chat Bot">
+                    <img src="lead_developer_hits_bullseye.jpg" alt="Chat Bot">
                 </div>
                 <div class="content">
-                    <h2>Transform Interactions with Chat Bot Integration</h2>
+                    <h2>AI Enhanced Workflow</h2>
                     <ul>
-                        <li>Personalized Experience: Offer real-time, automated support tailored to each customer.</li>
-                        <li>Seamless Integration: Integrate chat bots into your existing platforms effortlessly.</li>
-                        <li>Data-Driven Insights: Collect valuable data to continuously improve customer interactions.</li>
+                        <li>Document Generation: Document creation for onboarding and support documents.</li>
+                        <li>Error Checking: Check for errors in common forms with tried and true AI.</li>
+                        <li>Data-Driven Insights: Collect valuable data to continuously improve processing.</li>
                     </ul>
-                    <p>Engage your audience effectively with our Chat Bot Integration services.</p>
+                    <p>Integrate AI into your loan origination flow for cost reduction and quality control.</p>
                 </div>
             </div>
         </div>
 
         <hr />
 
-        <!-- Section: Reinforcement Learning -->
+        <!-- Section: Contact Form -->
         <div class="section section-dark">
             <div class="container">
                 <div class="content">
-                    <h2>Optimize Outcomes with Reinforcement Learning</h2>
-                    <ul>
-                        <li>Dynamic Learning: Build systems that learn and adapt over time.</li>
-                        <li>Action & Reward: Utilize the action-reward paradigm for better decision-making.</li>
-                        <li>Real-world Applications: Solve complex problems in various domains such as finance, robotics, and healthcare.</li>
-                    </ul>
-                    <p>Unlock potential with advanced Reinforcement Learning techniques.</p>
+                    <h2>Contact Us</h2>
+                    <p>Have questions or need a consultation? Fill out the form below, and we'll get back to you as soon
+                        as possible.</p>
+                    <!-- <form action="" method="POST"> -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <!-- </form> -->
                 </div>
                 <div class="image">
-                    <img src="reinforcement_learning_image.jpg" alt="Reinforcement Learning">
+                    <img src="macbook-6159681_1920.jpg" alt="Contact Us">
                 </div>
             </div>
         </div>
-
-        <hr />
-
-        <!-- Contact Us -->
-        <p class="text-center">Contact us today for a consultation tailored to your AI needs.</p>
-
     </div>
-
-    <!-- Image Credits and Bootstrap JS -->
-        <!-- Bootstrap JS scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
